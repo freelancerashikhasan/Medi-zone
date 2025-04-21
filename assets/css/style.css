@@ -1,0 +1,419 @@
+@font-face {
+  font-family: "Li Ador Noirrit";
+  src: url("../fonts/LiAdorNoirritMultiweight/Unicode/Li Ador Noirrit Regular.ttf")
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "FN Baraka Bangla Bijoy2003";
+  src: url("../fonts/FN Baraka Bangla/Unicode/FN Baraka Bangla Unicode.ttf")
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Raleway";
+  src: url("../fonts/Raleway/static/Raleway-Medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Nunito Sans";
+  src: url("../fonts/Nunito_Sans,Raleway/Nunito_Sans/NunitoSans-VariableFont_YTLC,opsz,wdth,wght.ttf")
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Lexend";
+  src: url("../fonts/legend-m54/Legend M54.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter/static/Inter_18pt-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+/* body {
+  font-family: "Li Ador Noirrit", sans-serif;
+} */
+.nav-section {
+  width: 100%;
+  background-color: #d2e6e4;
+  padding: 50px 0px 50px;
+}
+
+.main-banner {
+  background-color: #d2e6e4;
+  padding: 10px 0px 50px;
+  border-bottom-left-radius: 36px;
+  border-bottom-right-radius: 36px;
+
+  box-shadow: -1px 5px 5px 1px rgba(0, 0, 0, 0.32);
+  -webkit-box-shadow: -1px 5px 5px 1px rgba(0, 0, 0, 0.32);
+  -moz-box-shadow: -1px 5px 5px 1px rgba(0, 0, 0, 0.32);
+  position: relative;
+}
+.navbar-brand img {
+  width: 121px;
+  height: 21px;
+}
+.navbar-nav .nav-item .nav-link {
+  font-weight: 600;
+  font-family: "Li Ador Noirrit", sans-serif;
+  font-size: 18px;
+}
+.navbar-nav .nav-item .nav-link:hover {
+  color: #df1c25;
+  transition: 0.2s ease-out;
+}
+.login-btn {
+  border-radius: 15px;
+  vertical-align: center;
+  background-color: red;
+  color: #ffffff;
+  font-weight: 600;
+  font-weight: 18px;
+  padding: 10px 20px 10px;
+  border: 2px solid red;
+}
+.login-btn:hover {
+  background-color: #fff;
+  color: red;
+  border: 2px solid red;
+  transition: 0.5s ease-in;
+}
+.main-banner-img {
+  border-radius: 20px;
+  z-index: 1 !important;
+}
+.main-banner-img2 {
+  border-radius: 40px;
+  /* box-shadow: 7px 8px 4px 0px rgba(192, 210, 208, 0.68);
+  -webkit-box-shadow: 7px 8px 4px 0px rgba(192, 210, 208, 0.68);
+  -moz-box-shadow: 7px 8px 4px 0px rgba(192, 210, 208, 0.68);*/
+}
+.main-banner-text {
+  font-family: "FN Baraka Bangla Bijoy2003", sans-serif;
+  text-align: center;
+  font-size: 24px;
+  color: #ff0000;
+  padding-bottom: 10px;
+}
+.main-banner-vector {
+  position: absolute;
+  top: -12rem;
+  left: 20rem;
+  width: 100%;
+  max-width: 1111px;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 1;
+}
+@media (max-width: 768px) {
+  .main-banner-vector {
+    left: 0;
+    top: -10rem;
+    width: 100%;
+    max-width: 100%;
+    opacity: 1;
+  }
+  .second-banner-sec {
+    padding-top: 30px;
+  }
+  .see-more {
+    font-size: 10px !important;
+  }
+  .pricing p {
+    font-size: 16px !important;
+  }
+  .footer-logo {
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 1426px) and (min-width: 768px) {
+  .main-banner-vector {
+    left: 0;
+    top: -14rem;
+    width: 100%;
+    max-width: 100%;
+    opacity: 1;
+  }
+  .see-more {
+    font-size: 14px !important;
+  }
+  .pricing p {
+    font-size: 16px !important;
+  }
+  .pricing del {
+    font-size: 12px !important;
+  }
+}
+.moto {
+  font-family: "Raleway", sans-serif;
+  background-color: #fff;
+  padding: 10px 20px 10px;
+  border-radius: 10px;
+}
+.founder-img {
+  width: 52px;
+  /* border: 2px solid black; */
+  border-radius: 100%;
+  height: 52px;
+}
+.founder-text {
+  font-family: "Raleway", sans-serif;
+}
+.student-count {
+  width: 250px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  margin-top: 20px;
+  font-family: "Nunito Sans", sans-serif;
+}
+.overview-section {
+  background-color: #ffffff;
+}
+.overview-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  background-color: #df1c25;
+  padding: 70px 40px;
+  border-radius: 20px;
+  justify-content: center;
+}
+
+.overview-card {
+  text-align: center;
+  border: 2px solid #fff;
+  border-radius: 20px;
+  color: #fff;
+  padding: 20px;
+  box-sizing: border-box;
+  flex: 1 1 100%;
+  max-width: 100%;
+}
+
+.overview-card img {
+  width: 94px;
+  height: 94px;
+  margin: 40px 0 20px;
+}
+
+.overview-card h5 {
+  font-weight: 600;
+  font-family: "Li Ador Noirrit", sans-serif;
+}
+.overview-card p {
+  font-family: "Li Ador Noirrit", sans-serif;
+}
+
+@media (min-width: 768px) {
+  .overview-card {
+    flex: 1 1 calc(50% - 20px);
+    max-width: calc(50% - 20px);
+  }
+}
+
+@media (min-width: 992px) {
+  .overview-card {
+    flex: 1 1 calc(25% - 20px);
+    max-width: calc(25% - 20px);
+  }
+}
+.courses-title h3 {
+  text-align: center;
+  font-family: "Li Ador Noirrit", sans-serif !important;
+  font-weight: 600;
+  color: #df1c25;
+}
+.title-border {
+  width: 181px;
+  margin: -15px auto;
+}
+.title-border svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.course-sec {
+  background-color: #ededed;
+  border-radius: 20px;
+}
+.course-title h4 {
+  text-align: center;
+  border-bottom: 1px solid #000;
+  padding-bottom: 20px;
+  font-weight: 600;
+}
+.course-card {
+  border-radius: 10px;
+  margin-top: 30px;
+}
+.course-card img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.course-text h5 {
+  font-family: Lexend;
+}
+.course-text p {
+  font-family: "Raleway";
+  font-size: 12px;
+}
+.course-btn-text {
+  font-family: "Li Ador Noirrit", sans-serif !important;
+  font-size: 12px;
+  padding-left: 10px;
+  padding-top: 5px;
+}
+@media (max-width: 768px) {
+  .course-sec {
+    padding: 15px !important;
+  }
+}
+.pricing p {
+  font-family: "Inter", sans-serif;
+  font-size: 24px;
+  color: #df1c25;
+  font-weight: 600;
+}
+.pricing del {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  margin: 5px 10px 0px;
+  color: #918787;
+}
+.see-more {
+  border-radius: 15px;
+  vertical-align: center;
+  background-color: red;
+  color: #ffffff;
+  font-weight: 600;
+  font-weight: 18px;
+  padding: 10px 20px 10px;
+}
+.video-section {
+  padding: 80px 20px 80px;
+}
+.video-content {
+  width: 100%;
+  background-color: #df1c25;
+  height: 100%;
+  border-radius: 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+}
+
+.video-content h5 {
+  text-align: center;
+  vertical-align: middle;
+  color: #fff;
+}
+.view-all-btn {
+  border: 1px solid #000000;
+  font-family: "Raleway", sans-serif;
+  color: #1a797f;
+  padding: 5px 20px 5px;
+}
+.about-content {
+  background: url("../images/about-bg.png");
+  min-height: 400px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+}
+.about-content h5 {
+  text-align: center;
+  color: #fff;
+  padding-top: 20px;
+  font-family: "Li Ador Noirrit", sans-serif !important;
+  font-weight: 600;
+  font-size: 24px;
+}
+.footer {
+  width: 100%;
+  background: url("../images/footer.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  padding: 40px 20px;
+  position: relative;
+  min-height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-content {
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* footer .container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+} */
+.footer-title {
+  font-family: "Raleway", sans-serif;
+  color: #0a033c;
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-bottom: 20px;
+}
+
+.footer-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #0b7077;
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.footer-link img {
+  margin-right: 15px;
+}
+.d-flex {
+  display: flex;
+  gap: 10px;
+}
+
+.social-icon {
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+}
+
+.social-link {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+}
+.footer-logo {
+  margin-top: 100px;
+  width: 187px;
+  height: 32px;
+}
