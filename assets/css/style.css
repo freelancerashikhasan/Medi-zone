@@ -37,6 +37,16 @@
   font-weight: normal;
   font-style: normal;
 }
+[data-aos] {
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform-style: preserve-3d;
+}
+html,
+body {
+  overflow-x: hidden;
+}
 /* body {
   font-family: "Li Ador Noirrit", sans-serif;
 } */
@@ -76,7 +86,7 @@
   background-color: red;
   color: #ffffff;
   font-weight: 600;
-  font-weight: 18px;
+  font-size: 18px;
   padding: 10px 20px 10px;
   border: 2px solid red;
 }
@@ -175,7 +185,7 @@
   font-family: "Nunito Sans", sans-serif;
 }
 .overview-section {
-  background-color: #ffffff;
+  /* background-color: #ffffff; */
 }
 .overview-content {
   display: flex;
@@ -225,6 +235,36 @@
     max-width: calc(25% - 20px);
   }
 }
+
+@media (max-width: 768px) {
+  .overview-card {
+    flex: 1 1 calc(50% - 20px);
+    max-width: calc(50% - 20px);
+  }
+  .overview-card img {
+    width: 64px !important;
+    height: 64px !important;
+    margin: 17px 0 20px !important;
+  }
+  .overview-content {
+    padding: 14px 5px !important;
+  }
+  .login-btn {
+    padding: 5px 20px 6px !important;
+  }
+}
+@media (max-width: 384px) {
+  .login-btn {
+    padding: 5px 5px 6px !important;
+    font-size: 15px;
+  }
+}
+@media (max-width: 400px) {
+  .overview-text {
+    font-size: 13px !important;
+  }
+}
+
 .courses-title h3 {
   text-align: center;
   font-family: "Li Ador Noirrit", sans-serif !important;

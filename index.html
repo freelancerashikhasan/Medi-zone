@@ -3,7 +3,62 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bootstrap Local</title>
+
+    <title>Medi-zone | মেডিকেল ভর্তি কোচিং প্ল্যাটফর্ম</title>
+    <meta
+      name="description"
+      content="Medi-zone বাংলাদেশের সেরা মেডিকেল ভর্তি কোচিং প্ল্যাটফর্ম। এক্সপার্ট টিচার, PDF, অনলাইন ক্লাস ও মক টেস্ট সহ মেডিকেল ভর্তি প্রস্তুতি এখন আরও সহজ।"
+    />
+    <meta
+      name="keywords"
+      content="Medi-zone, মেডিজোন, মেডিকেল ভর্তি কোচিং, মেডিকেল কোর্স, মেডিকেল প্রিপারেশন, মেডিকেল ভর্তি গাইডলাইন, MBBS কোচিং, Bangladesh Medical Coaching"
+    />
+    <meta name="author" content="Medi-zone Team" />
+    <meta name="robots" content="index, follow" />
+
+    <link rel="icon" href="assets/images/logo.svg" type="image/x-icon" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/images/logo.svg"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/images/logo.svg"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/images/logo.svgg"
+    />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.medi-zone.com/" />
+    <meta
+      property="og:title"
+      content="Medi-zone | বাংলাদেশের সেরা মেডিকেল ভর্তি কোচিং"
+    />
+    <meta
+      property="og:description"
+      content="এক্সপার্টদের সাথে মেডিকেল ভর্তি প্রস্তুতি নিন Medi-zone থেকে। অনলাইন ক্লাস, PDF, কুইজ ও মক টেস্ট একসাথে।"
+    />
+    <meta property="og:image" content="assets/images/logo.svg" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Medi-zone | বাংলাদেশের সেরা মেডিকেল ভর্তি কোচিং"
+    />
+    <meta
+      name="twitter:description"
+      content="Medi-zone - অনলাইন মেডিকেল কোচিং প্ল্যাটফর্ম। PDF, কোর্স, মক টেস্ট সব এক জায়গায়।"
+    />
+    <meta name="twitter:image" content="assets/images/logo.svg" />
+
+    <link rel="canonical" href="https://www.medi-zone.com/" />
     <link rel="stylesheet" href="assets/dist/bootstrap/css/bootstrap.min.css" />
     <link
       rel="preload"
@@ -41,31 +96,34 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/dist/aos/aos.css" />
   </head>
   <body>
     <section class="nav-section">
       <div class="container">
         <nav class="navbar navbar-expand-lg">
-          <div class="container-fluid">
-            <!-- Left: Logo -->
+          <div
+            class="container-fluid d-flex align-items-center justify-content-between"
+          >
             <a class="navbar-brand" href="#">
               <img src="assets/images/logo.svg" alt="Logo" />
             </a>
 
-            <!-- Toggler for mobile view -->
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarContent"
-              aria-controls="navbarContent"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
+            <div class="d-flex align-items-center gap-2 d-lg-none">
+              <a href="#" class="btn login-btn">লগইন</a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarContent"
+                aria-controls="navbarContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            </div>
 
-            <!-- Collapsible content -->
             <div class="collapse navbar-collapse" id="navbarContent">
               <ul
                 class="navbar-nav mb-2 mb-lg-0 flex-lg-row text-center gap-lg-5 mx-lg-auto"
@@ -74,19 +132,20 @@
                   <a class="nav-link active" href="#">হোম</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link active" href="#">কোর্স সমূহ</a>
+                  <a class="nav-link" href="#">কোর্স সমূহ</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link active" href="#">পিডিএফ</a>
+                  <a class="nav-link" href="#">পিডিএফ</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link active" href="#">আমাদের সম্পর্কে</a>
+                  <a class="nav-link" href="#">আমাদের সম্পর্কে</a>
                 </li>
+                <div
+                  class="text-center text-lg-end mt-3 mt-lg-0 d-none d-lg-block"
+                >
+                  <a href="#" class="btn login-btn">লগইন/রেজিস্ট্রেশন</a>
+                </div>
               </ul>
-
-              <div class="text-center text-lg-end mt-3 mt-lg-0">
-                <a href="#" class="btn login-btn">লগইন/রেজিস্ট্রেশন</a>
-              </div>
             </div>
           </div>
         </nav>
@@ -102,14 +161,18 @@
             alt=""
           />
           <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-6" data-aos="fade-right" data-aos-duration="500">
               <img
                 class="w-100 main-banner-img"
                 src="assets/images/main-banner.png"
                 alt=""
               />
             </div>
-            <div class="col-md-6 second-banner-sec">
+            <div
+              class="col-md-6 second-banner-sec"
+              data-aos="fade-left"
+              data-aos-duration="500"
+            >
               <h1 class="main-banner-text">মেডিকেল এডমিশন ২০২২-২৩ সেশন</h1>
 
               <img
@@ -120,7 +183,11 @@
             </div>
           </div>
           <div class="row pt-5">
-            <div class="col-md-6 text-start">
+            <div
+              class="col-md-6 text-start"
+              data-aos="fade-right"
+              data-aos-duration="500"
+            >
               <span class="moto">Never stop learning</span>
               <div class="d-flex pt-4">
                 <div class="">
@@ -136,7 +203,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6" data-aos="fade-left" data-aos-duration="500">
               <div class="d-flex justify-content-end">
                 <div class="student-count d-flex p-3 gap-3">
                   <img src="assets/icons/calander.svg" alt="" />
@@ -152,28 +219,32 @@
       </div>
     </section>
 
-    <section class="overview-section mt-5 mb-5">
+    <section
+      class="overview-section mt-5 mb-5"
+      data-aos="fade-up"
+      data-aos-duration="500"
+    >
       <div class="container">
         <div class="overview-content mx-lg-5 mx-md-2">
           <div class="overview-card">
             <img src="assets/icons/video.png" alt="" />
             <h5>১৫০০০+</h5>
-            <p class="">ভিডিও টিউটোরিয়াল</p>
+            <p class="overview-text">ভিডিও টিউটোরিয়াল</p>
           </div>
           <div class="overview-card">
             <img src="assets/icons/note.png" alt="" />
             <h5>৫০০০+</h5>
-            <p>ভিডিও টিউটোরিয়াল</p>
+            <p class="overview-text">ভিডিও টিউটোরিয়াল</p>
           </div>
           <div class="overview-card">
             <img src="assets/icons/pen.png" alt="" />
             <h5>২০০০+</h5>
-            <p>ভিডিও টিউটোরিয়াল</p>
+            <p class="overview-text">ভিডিও টিউটোরিয়াল</p>
           </div>
           <div class="overview-card">
             <img src="assets/icons/question.png" alt="" />
             <h5>২০০+</h5>
-            <p>ভিডিও টিউটোরিয়াল</p>
+            <p class="overview-text">ভিডিও টিউটোরিয়াল</p>
           </div>
         </div>
       </div>
@@ -201,9 +272,17 @@
             <div class="course-title">
               <h4>Advanced pre-medical for HSC’26 Batch</h4>
             </div>
-            <div class="course-content">
+            <div
+              class="course-content"
+              data-aos="fade-up"
+              data-aos-duration="500"
+            >
               <div class="row">
-                <div class="col-md-6 col-lg-4">
+                <div
+                  class="col-md-6 col-lg-4"
+                  data-aos="fade-right"
+                  data-aos-duration="500"
+                >
                   <div class="card course-card">
                     <img src="assets/images/course-banner.png" alt="" />
                     <div class="course-text mx-3 mt-2">
@@ -214,14 +293,22 @@
                         Indonesia.
                       </p>
                       <div class="d-flex mb-4">
-                        <div class="d-flex w-50">
-                          <img src="assets/icons/play.svg" alt="" />
+                        <div class="d-flex w-50 course-icon-sec">
+                          <img
+                            src="assets/icons/play.svg"
+                            class="course-icon"
+                            alt=""
+                          />
                           <span class="course-btn-text"
                             >সর্বমোট ২০০টি ক্লাস</span
                           >
                         </div>
-                        <div class="d-flex ms-4 w-50">
-                          <img src="assets/icons/exam.svg" alt="" />
+                        <div class="d-flex ms-4 w-50 course-icon-sec">
+                          <img
+                            src="assets/icons/exam.svg"
+                            class="course-icon"
+                            alt=""
+                          />
                           <span class="course-btn-text"
                             >সর্বমোট ২০০টি ক্লাস</span
                           >
@@ -241,7 +328,11 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-md-6 col-lg-8 video-section">
+                <div
+                  class="col-md-6 col-lg-8 video-section"
+                  data-aos="fade-left"
+                  data-aos-duration="500"
+                >
                   <div class="video-content">
                     <h5>Video Box</h5>
                   </div>
@@ -253,9 +344,17 @@
             <div class="course-title">
               <h4>Advanced pre-medical for HSC’26 Batch</h4>
             </div>
-            <div class="course-content">
+            <div
+              class="course-content"
+              data-aos="fade-up"
+              data-aos-duration="500"
+            >
               <div class="row">
-                <div class="col-md-6 col-lg-4">
+                <div
+                  class="col-md-6 col-lg-4"
+                  data-aos="fade-right"
+                  data-aos-duration="500"
+                >
                   <div class="card course-card">
                     <img src="assets/images/course-banner.png" alt="" />
                     <div class="course-text mx-3 mt-2">
@@ -266,14 +365,22 @@
                         Indonesia.
                       </p>
                       <div class="d-flex mb-4">
-                        <div class="d-flex w-50">
-                          <img src="assets/icons/play.svg" alt="" />
+                        <div class="d-flex w-50 course-icon-sec">
+                          <img
+                            src="assets/icons/play.svg"
+                            class="course-icon"
+                            alt=""
+                          />
                           <span class="course-btn-text"
                             >সর্বমোট ২০০টি ক্লাস</span
                           >
                         </div>
-                        <div class="d-flex ms-4 w-50">
-                          <img src="assets/icons/exam.svg" alt="" />
+                        <div class="d-flex ms-4 w-50 course-icon-sec">
+                          <img
+                            src="assets/icons/exam.svg"
+                            class="course-icon"
+                            alt=""
+                          />
                           <span class="course-btn-text"
                             >সর্বমোট ২০০টি ক্লাস</span
                           >
@@ -293,7 +400,11 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-md-6 col-lg-8 video-section">
+                <div
+                  class="col-md-6 col-lg-8 video-section"
+                  data-aos="fade-left"
+                  data-aos-duration="500"
+                >
                   <div class="video-content">
                     <h5>Video Box</h5>
                   </div>
@@ -305,9 +416,17 @@
             <div class="course-title">
               <h4>Advanced pre-medical for HSC’26 Batch</h4>
             </div>
-            <div class="course-content">
+            <div
+              class="course-content"
+              data-aos="fade-up"
+              data-aos-duration="500"
+            >
               <div class="row">
-                <div class="col-md-6 col-lg-4">
+                <div
+                  class="col-md-6 col-lg-4"
+                  data-aos="fade-right"
+                  data-aos-duration="500"
+                >
                   <div class="card course-card">
                     <img src="assets/images/course-banner.png" alt="" />
                     <div class="course-text mx-3 mt-2">
@@ -318,14 +437,22 @@
                         Indonesia.
                       </p>
                       <div class="d-flex mb-4">
-                        <div class="d-flex w-50">
-                          <img src="assets/icons/play.svg" alt="" />
+                        <div class="d-flex w-50 course-icon-sec">
+                          <img
+                            src="assets/icons/play.svg"
+                            class="course-icon"
+                            alt=""
+                          />
                           <span class="course-btn-text"
                             >সর্বমোট ২০০টি ক্লাস</span
                           >
                         </div>
-                        <div class="d-flex ms-4 w-50">
-                          <img src="assets/icons/exam.svg" alt="" />
+                        <div class="d-flex ms-4 w-50 course-icon-sec">
+                          <img
+                            src="assets/icons/exam.svg"
+                            class="course-icon"
+                            alt=""
+                          />
                           <span class="course-btn-text"
                             >সর্বমোট ২০০টি ক্লাস</span
                           >
@@ -345,7 +472,11 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-md-6 col-lg-8 video-section">
+                <div
+                  class="col-md-6 col-lg-8 video-section"
+                  data-aos="fade-left"
+                  data-aos-duration="500"
+                >
                   <div class="video-content">
                     <h5>Video Box</h5>
                   </div>
@@ -363,7 +494,11 @@
       </div>
     </section>
 
-    <section class="about-us-section mb-5">
+    <section
+      class="about-us-section mb-5"
+      data-aos="fade-up"
+      data-aos-duration="500"
+    >
       <div class="container">
         <div class="mx-lg-5 mx-md-3">
           <div class="about-content w-100">
@@ -376,12 +511,16 @@
     <footer class="footer">
       <div class="container">
         <div class="row">
-          <div class="col-md-3">
+          <div class="col-md-3" data-aos="fade-down" data-aos-duration="500">
             <img class="footer-logo" src="assets/images/logo.svg" alt="Logo" />
           </div>
           <div class="col-md-3">
             <h5 class="footer-title">Contact Us</h5>
-            <ul class="footer-links">
+            <ul
+              class="footer-links"
+              data-aos="fade-left"
+              data-aos-duration="500"
+            >
               <li>
                 <a href="" class="footer-link">
                   <img src="assets/icons/location.svg" alt="" />
@@ -410,7 +549,11 @@
 
           <div class="col-md-3">
             <h5 class="footer-title">Quick Links</h5>
-            <ul class="footer-links">
+            <ul
+              class="footer-links"
+              data-aos="fade-left"
+              data-aos-duration="500"
+            >
               <li>
                 <a href="" class="footer-link">
                   <span>All Courses</span>
@@ -478,5 +621,9 @@
     </footer>
 
     <script src="assets/dist/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/dist/aos/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
